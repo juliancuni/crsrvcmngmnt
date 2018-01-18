@@ -12,13 +12,15 @@ import { routing } from './app.routing'
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
-
 // Core providers
 import {CoreModule} from "./core/core.module";
 import {SmartadminLayoutModule} from "./shared/layout/layout.module";
 
 
 import { ModalModule } from 'ngx-bootstrap/modal';
+/**JC */
+import { SDKBrowserModule } from './shared/sdk/index';
+/** */
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -52,7 +54,8 @@ type StoreType = {
     CoreModule,
     SmartadminLayoutModule,
 
-    routing
+    routing,
+    SDKBrowserModule.forRoot()
   ],
   exports: [
   ],

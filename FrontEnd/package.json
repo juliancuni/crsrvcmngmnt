@@ -83,6 +83,7 @@
     "scriptjs": "2.5.8",
     "select2": "4.0.6-rc.1",
     "smartadmin-plugins": "1.0.21",
+    "socket.io-client": "^2.0.4",
     "summernote": "0.8.8",
     "to-markdown": "3.1.0",
     "ts-helpers": "1.1.2",

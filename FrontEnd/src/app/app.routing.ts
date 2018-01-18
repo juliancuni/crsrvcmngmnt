@@ -20,8 +20,15 @@ export const routes: Routes = [
                 path: 'home',
                 loadChildren: 'app/+home/home.module#HomeModule'
             },
+            {
+                path: 'misc',
+                loadChildren: 'app/+miscellaneous/miscellaneous.module#MiscellaneousModule',
+                data: {pageTitle: 'Miscellaneous'}
+            }
         ]
     },
+    {path: 'auth', component: AuthLayoutComponent, loadChildren: 'app/+auth/auth.module#AuthModule'},
+    {path: '**', redirectTo: 'misc/error404'}
 
 ];
 

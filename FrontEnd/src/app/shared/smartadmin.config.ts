@@ -6,13 +6,13 @@ export const config: any = {
 
   menu_speed: 200,
 
-  smartSkin: "smart-style-0",
+  smartSkin: "smart-style-2",
 
 
   skins: [
     {
       name: "smart-style-0",
-      logo: "assets/img/logo.png",
+      logo: "assets/img/coreAPP-logo.png",
       skinBtnClass: "btn btn-block btn-xs txt-color-white margin-right-5",
       style: {
         backgroundColor: '#4E463F'
@@ -22,7 +22,7 @@ export const config: any = {
 
     {
       name: "smart-style-1",
-      logo: "assets/img/logo-white.png",
+      logo: "assets/img/coreAPP-logo.png",
       skinBtnClass: "btn btn-block btn-xs txt-color-white",
       style: {
         background: '#3A4558'
@@ -32,7 +32,7 @@ export const config: any = {
 
     {
       name: "smart-style-2",
-      logo: "assets/img/logo-blue.png",
+      logo: "assets/img/coreAPP-logo.png",
       skinBtnClass: "btn btn-xs btn-block txt-color-darken margin-top-5",
       style: {
         background: '#fff'
@@ -42,7 +42,7 @@ export const config: any = {
 
     {
       name: "smart-style-3",
-      logo: "assets/img/logo-pale.png",
+      logo: "assets/img/coreAPP-logo.png",
       skinBtnClass: "btn btn-xs btn-block txt-color-white margin-top-5",
       style: {
         background: '#f78c40'
@@ -52,7 +52,7 @@ export const config: any = {
 
     {
       name: "smart-style-4",
-      logo: "assets/img/logo-pale.png",
+      logo: "assets/img/coreAPP-logo.png",
       skinBtnClass: "btn btn-xs btn-block txt-color-white margin-top-5",
       style: {
         background: '#bbc0cf',
@@ -64,7 +64,7 @@ export const config: any = {
 
     {
       name: "smart-style-5",
-      logo: "assets/img/logo-pale.png",
+      logo: "assets/img/coreAPP-logo.png",
       skinBtnClass: "btn btn-xs btn-block txt-color-white margin-top-5",
       style: {
         background: 'rgba(153, 179, 204, 0.2)',
@@ -89,7 +89,7 @@ export const config: any = {
    * The colors are best displayed in chrome browser.
    */
 
-  debugState: false,
+  debugState: true,
   debugStyle: 'font-weight: bold; color: #00f;',
   debugStyle_green: 'font-weight: bold; font-style:italic; color: #46C246;',
   debugStyle_red: 'font-weight: bold; color: #ed1c24;',

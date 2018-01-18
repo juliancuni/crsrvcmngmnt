@@ -14,6 +14,9 @@ import { throwIfAlreadyLoaded } from './guards/module-import-guard';
 import {VoiceRecognitionService} from "../shared/voice-control/voice-recognition.service";
 import {TabsModule, ProgressbarModule, TooltipModule, BsDropdownModule, AlertModule} from "ngx-bootstrap";
 
+import { AuthGuard }      from './guards/auth.guard';
+import { UnauthGuard }    from './guards/unauth.guard';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -34,6 +37,8 @@ import {TabsModule, ProgressbarModule, TooltipModule, BsDropdownModule, AlertMod
     VoiceControlService,
     VoiceRecognitionService,
     SoundService,
+    AuthGuard,
+    UnauthGuard,
   ]
 })
 export class CoreModule {

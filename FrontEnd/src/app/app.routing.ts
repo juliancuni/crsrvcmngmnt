@@ -8,6 +8,9 @@ import {MainLayoutComponent} from "./shared/layout/app-layouts/main-layout.compo
 import {AuthLayoutComponent} from "./shared/layout/app-layouts/auth-layout.component";
 import {ModuleWithProviders} from "@angular/core";
 
+import { AuthGuard }                from './core/guards/auth.guard';
+import { UnauthGuard }              from './core/guards/unauth.guard';
+
 export const routes: Routes = [
     {
         path: '',
@@ -18,16 +21,20 @@ export const routes: Routes = [
             },
             {
                 path: 'home',
-                loadChildren: 'app/+home/home.module#HomeModule'
+                loadChildren: 'app/+home/home.module#HomeModule', 
+                canActivate: [AuthGuard]
             },
             {
                 path: 'misc',
                 loadChildren: 'app/+miscellaneous/miscellaneous.module#MiscellaneousModule',
-                data: {pageTitle: 'Miscellaneous'}
+                data: {pageTitle: 'Miscellaneous'},
+                canActivate: [AuthGuard]
             }
         ]
     },
-    {path: 'auth', component: AuthLayoutComponent, loadChildren: 'app/+auth/auth.module#AuthModule'},
+    {path: 'auth', component: AuthLayoutComponent, loadChildren: 'app/+auth/auth.module#AuthModule', 
+        canActivate: [UnauthGuard]
+    },
     {path: '**', redirectTo: 'misc/error404'}
 
 ];
